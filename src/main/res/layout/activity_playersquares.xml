@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/squareOneView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/squareThreeView"
+        app:layout_constraintEnd_toStartOf="@+id/squareTwoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/squareOneTextView"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        android:rotation="90"
+        android:text="40"
+        android:textAlignment="center"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/squareOneView"
+        app:layout_constraintEnd_toEndOf="@+id/squareOneView"
+        app:layout_constraintStart_toStartOf="@+id/squareOneView"
+        app:layout_constraintTop_toTopOf="@+id/squareOneView" />
+
+    <ImageButton
+        android:id="@+id/increaseSquareOneButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareOneView"
+        app:layout_constraintEnd_toEndOf="@+id/squareOneView"
+        app:layout_constraintStart_toEndOf="@+id/decreaseSquareOneButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageButton
+        android:id="@+id/decreaseSquareOneButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareOneView"
+        app:layout_constraintEnd_toStartOf="@+id/increaseSquareOneButton"
+        app:layout_constraintStart_toStartOf="@+id/squareOneView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/firstOneTextView"
+        android:layout_width="32dp"
+        android:layout_height="74dp"
+        android:rotation="90"
+        android:rotationY="0"
+        android:text="First"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/squareOneView"
+        app:layout_constraintEnd_toStartOf="@+id/squareOneTextView"
+        app:layout_constraintStart_toStartOf="@+id/squareOneView"
+        app:layout_constraintTop_toTopOf="@+id/squareOneView" />
+
+    <View
+        android:id="@+id/squareTwoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/squareFourView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/squareOneView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/squareTwoTextView"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        android:rotation="270"
+        android:text="40"
+        android:textAlignment="center"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/squareTwoView"
+        app:layout_constraintEnd_toEndOf="@+id/squareTwoView"
+        app:layout_constraintStart_toStartOf="@+id/squareTwoView"
+        app:layout_constraintTop_toTopOf="@+id/squareTwoView" />
+
+    <ImageButton
+        android:id="@+id/increaseSquareTwoButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareTwoView"
+        app:layout_constraintEnd_toStartOf="@+id/decreaseSquareTwoButton"
+        app:layout_constraintStart_toStartOf="@+id/squareTwoView"
+        app:layout_constraintTop_toTopOf="@+id/squareTwoView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageButton
+        android:id="@+id/decreaseSquareTwoButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareTwoView"
+        app:layout_constraintEnd_toEndOf="@+id/squareTwoView"
+        app:layout_constraintStart_toEndOf="@+id/increaseSquareTwoButton"
+        app:layout_constraintTop_toTopOf="@+id/squareTwoView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/firstTwoTextView"
+        android:layout_width="32dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="150dp"
+        android:rotation="270"
+        android:rotationY="0"
+        android:text="First"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/squareTwoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/squareTwoTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/squareThreeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/squareFourView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareOneView" />
+
+    <TextView
+        android:id="@+id/squareThreeTextView"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        android:rotation="90"
+        android:text="40"
+        android:textAlignment="center"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/squareThreeView"
+        app:layout_constraintEnd_toEndOf="@+id/squareThreeView"
+        app:layout_constraintStart_toStartOf="@+id/squareThreeView"
+        app:layout_constraintTop_toTopOf="@+id/squareThreeView" />
+
+    <ImageButton
+        android:id="@+id/increaseSquareThreeButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareThreeView"
+        app:layout_constraintEnd_toEndOf="@+id/squareThreeView"
+        app:layout_constraintStart_toEndOf="@+id/decreaseSquareThreeButton"
+        app:layout_constraintTop_toTopOf="@+id/squareThreeView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageButton
+        android:id="@+id/decreaseSquareThreeButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/squareThreeView"
+        app:layout_constraintEnd_toStartOf="@+id/increaseSquareThreeButton"
+        app:layout_constraintStart_toStartOf="@+id/squareThreeView"
+        app:layout_constraintTop_toTopOf="@+id/squareThreeView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/firstThreeTextView"
+        android:layout_width="32dp"
+        android:layout_height="74dp"
+        android:rotation="90"
+        android:rotationY="0"
+        android:text="First"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/squareThreeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareOneView" />
+
+    <View
+        android:id="@+id/squareFourView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/squareThreeView"
+        app:layout_constraintTop_toBottomOf="@+id/squareTwoView" />
+
+    <TextView
+        android:id="@+id/squareFourTextView"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        android:rotation="270"
+        android:text="40"
+        android:textAlignment="center"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/squareFourView"
+        app:layout_constraintEnd_toStartOf="@+id/squareFourView"
+        app:layout_constraintStart_toEndOf="@+id/squareFourView"
+        app:layout_constraintTop_toBottomOf="@+id/squareFourView" />
+
+    <ImageButton
+        android:id="@+id/increaseSquareFourButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/decreaseSquareFourButton"
+        app:layout_constraintStart_toStartOf="@+id/squareFourView"
+        app:layout_constraintTop_toTopOf="@+id/squareFourView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageButton
+        android:id="@+id/decreaseSquareFourButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/increaseSquareFourButton"
+        app:layout_constraintTop_toTopOf="@+id/squareFourView"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:background="#A1A1A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstFourTextView"
+        android:layout_width="32dp"
+        android:layout_height="74dp"
+        android:rotation="270"
+        android:rotationY="0"
+        android:text="First"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/squareFourView"
+        app:layout_constraintStart_toEndOf="@+id/squareFourTextView"
+        app:layout_constraintTop_toBottomOf="@+id/squareTwoView" />
+
+    <View
+        android:id="@+id/menuView"
+        android:layout_width="243dp"
+        android:layout_height="455dp"
+        android:background="#A3A3A3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButtonX"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="320dp"
+        android:enabled="false"
+        android:text="X"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/menuView"
+        app:layout_constraintEnd_toEndOf="@+id/menuView"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="@+id/menuView"
+        app:layout_constraintTop_toTopOf="@+id/menuView"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="115dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="264dp"
+        android:enabled="false"
+        android:text="Reset"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/menuView"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/menuView"
+        app:layout_constraintTop_toTopOf="@+id/menuView" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="115dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="45dp"
+        android:enabled="false"
+        android:text="Home"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/increaseSquareThreeButton"
+        app:layout_constraintEnd_toEndOf="@+id/menuView"
+        app:layout_constraintStart_toStartOf="@+id/menuView"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/menuTextView"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="80dp"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toStartOf="@+id/squareTwoTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/backButtonX"
+        app:layout_constraintTop_toTopOf="@+id/menuView"
+        app:layout_constraintVertical_bias="0.53" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

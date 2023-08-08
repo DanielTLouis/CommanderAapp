@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="125dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="316dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/mainView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#673AB7"
+        android:paddingBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:text="Commander App"
+        android:textAlignment="center"
+        android:textColor="#BABABA"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainView"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/backButton1"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="510dp"
+        android:enabled="false"
+        android:text="X"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainView" />
+
+    <Button
+        android:id="@+id/threePlayerButton"
+        android:layout_width="169dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="121dp"
+        android:enabled="false"
+        android:text="Three Players"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fourPlayerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent
+" />
+
+    <Button
+        android:id="@+id/fourPlayerButton"
+        android:layout_width="169dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="242dp"
+        android:enabled="false"
+        android:text="Four Players"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/threePlayerButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
